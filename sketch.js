@@ -126,6 +126,7 @@ let showMessage = false;
 let StageSend = 11;
 localStorage.setItem('Stage', StageSend);
 let Unlock = parseInt(localStorage.getItem('Complete1'), 10);
+let LocationS = parseInt(localStorage.getItem('PageL'), 10);
 
 function preload() {
   backgroundImage = loadImage("materials/images/Background11.jpg");
@@ -546,7 +547,25 @@ function goToHomePage() {
       window.location.href = "https://magicarchie.github.io/Stage_Selection_2/";
     } else {
       console.log("Go to home page (Not Complete)!");
-      window.location.href = "https://magicarchie.github.io/Stage_Selection_1/";
+      if (LocationS == 111) {
+        window.location.href = "https://magicarchie.github.io/Stage_Selection_1/";
+      } else if (LocationS == 222) {
+        window.location.href = "https://magicarchie.github.io/Stage_Selection_2/";       
+      } else if (LocationS == 333) {
+        window.location.href = "https://magicarchie.github.io/Stage_Selection_3/";       
+      } else if (LocationS == 444) {
+        window.location.href = "https://magicarchie.github.io/Stage_Selection_4/";      
+      } else if (LocationS == 555) {
+        window.location.href = "https://magicarchie.github.io/Stage_Selection_5/";    
+      } else if (LocationS == 666) {
+        window.location.href = "https://magicarchie.github.io/Stage_Selection_6/";       
+      } else if (LocationS == 777) {
+        window.location.href = "https://magicarchie.github.io/Stage_Selection_7/";      
+      } else if (LocationS == 888) {
+        window.location.href = "https://magicarchie.github.io/Stage_Selection_Secret/";   
+      } else if (LocationS == 999) {
+        window.location.href = "https://magicarchie.github.io/Stage_Selection_Finale/"; 
+      }
     }
   }, 100);
 }

@@ -731,7 +731,7 @@ function mousePressed() {
       mouseX <= 1126 &&
       mouseY >= 110 &&
       mouseY <= 410 &&
-      Unlock != 2
+      Unlock != "true"
     ) {
        choice.setVolume(0.1);
        choice.play();
